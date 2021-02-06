@@ -2,16 +2,12 @@
 renderLicenseBadge = license =>{
     // If license is chosen:
   if(license){
+    // create badge for each license:
     var licenseBadgestring = '';
     license.forEach(element =>{
       licenseBadgestring += '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(element) +'&color=GREEN) ';
     });
     return licenseBadgestring;
-    // create a badge dynamically from the chosen license and return a string containing the badge
-    // return '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license.trim()) +'&color=GREEN)';
-    // return '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license.trim()) +'&color=GREEN)';
-    //console.log('![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license.trim()) +'&color=GREEN)');
-    //return '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license.trim()) +'&color=GREEN)';
   }else{
     // if no license is chosen return empty string
     return '';
@@ -77,12 +73,11 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  $//{renderLicenseBadge(data.license.join(', '))}
   ${renderLicenseBadge(data.license)}
 
 
   ## Description
-  $//{data.description}
+  ${data.description}
 
 
   ## Table of Contents
@@ -95,28 +90,28 @@ function generateMarkdown(data) {
 
 
   ## Installation
-  $//{data.installation}
+  ${data.installation}
 
 
   ## Usage
-  $//{data.usage}
+  ${data.usage}
 
   
   ## Contributing
-  $//{data.contribution}
+  ${data.contribution}
 
 
   ## Tests
-  $//{data.test}
+  ${data.test}
 
 
   ## License
-  $//{renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)}
 
 
   ## Questions
-  Github Profile: [$//{data.githubUsername}](https://github.com/$//{data.githubUsername})
-  Reach me with additional questions at $//{data.email}
+  Github Profile: [${data.githubUsername}](https://github.com/$//{data.githubUsername})
+  Reach me with additional questions at ${data.email}
 `;
 }
 
