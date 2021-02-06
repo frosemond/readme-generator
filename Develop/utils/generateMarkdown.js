@@ -1,6 +1,14 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  //console.log(license);
+  if(license){
+    return '<img scr ="https://img.shields.io/static/v1?label=licence&message='+ license +'&color=<GREEN>"</img>';
+  }else{
+    return '';
+  }
+  
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -14,9 +22,10 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${renderLicenseBadge(data.license.join(', '))}
 
   ## Description
-  ${data.description}
+  $//{data.description}
 
 
   ## Table of Contents
@@ -27,28 +36,28 @@ function generateMarkdown(data) {
 
 
   ## Installation Instruction
-  ${data.installation}
+  $//{data.installation}
 
 
   ## Usage
-  ${data.usage}
+  $//{data.usage}
 
   
   ## Contributing
-  ${data.contribution}
+  $//{data.contribution}
 
 
   ## Tests
-  ${data.test}
+  $//{data.test}
 
 
   ## license
-  ${data.license.join(', ')}
+  $//{data.license.join(', ')}
 
 
   ## Questioins
-  Github Profile: ${data.githubUsername}
-  Reach me with additional questions at ${data.email}
+  Github Profile: $//{data.githubUsername}
+  Reach me with additional questions at $//{data.email}
 `;
 }
 

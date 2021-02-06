@@ -1,10 +1,9 @@
-# readme Generator
+# title01
 
-  [<img src="https://img.shields.io/badge/licence-MIT-brightgreen">]
-
+  <img scr ="https://img.shields.io/static/v1?label=licence&message=GNU AGPLv3, GNU GPLv3, GNU LGPLv3&color=<GREEN>"</img>
 
   ## Description
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+  $//{data.description}
 
 
   ## Table of Contents
@@ -12,28 +11,28 @@
   * [Usage](#usage)
   * [Credits](#credits)
   * [License](#license)
-  
+
 
   ## Installation Instruction
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+  $//{data.installation}
 
 
   ## Usage
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+  $//{data.usage}
 
   
   ## Contributing
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+  $//{data.contribution}
 
 
   ## Tests
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+  $//{data.test}
 
 
   ## license
-  JavaScript, HTML, CSS
+  $//{data.license.join(', ')}
 
 
   ## Questioins
-  Github Profile: github.com/ryan7998
-  Reach me with additional questions at ryan7998@gmail.com
+  Github Profile: $//{data.githubUsername}
+  Reach me with additional questions at $//{data.email}
