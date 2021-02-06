@@ -32,7 +32,7 @@
   ## License
   GNU GPLv3: <br />
 
-  [I'm a relative reference to a repository file](../src/GNU GPLv3.txt)
+  [I'm a relative reference to a repository file](../src/GNU%20GPLv3.txt)
   
   
   Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. 
