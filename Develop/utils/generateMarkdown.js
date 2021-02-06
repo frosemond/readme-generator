@@ -3,7 +3,6 @@
 function renderLicenseBadge(license) {
   //console.log(license);
   if(license){
-    //return '<img scr ="https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license)  +'&color=GREEN"></img>';
     return '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license.trim()) +'&color=GREEN)';
   }else{
     return '';
@@ -15,7 +14,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(element) {
   // return '[](../src/' + element + ')';
-  return '[link to the Licence](../src/' + encodeURIComponent(element) + '.txt)'
+  return '[Link to the Licence](../src/' + encodeURIComponent(element) + '.txt)'
 }
 
 // TODO: Create a function that returns the license section of README
