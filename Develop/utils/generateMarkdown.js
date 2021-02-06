@@ -103,7 +103,7 @@ function generateMarkdown(data) {
 
 
   ## Questions
-  Github Profile: ${data.githubUsername}
+  Github Profile: [${data.githubUsername}]('https://github.com/${data.githubUsername}')
   Reach me with additional questions at ${data.email}
 `;
 }
