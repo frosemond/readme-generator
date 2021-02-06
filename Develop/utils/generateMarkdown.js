@@ -2,13 +2,6 @@
 renderLicenseBadge = license =>{
     // If license is chosen:
   if(license){
-   /*  // create badge for each license:
-    var licenseBadgestring = '';
-    license.forEach(element =>{
-      licenseBadgestring += '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(element) +'&color=GREEN) ';
-    });
-    return licenseBadgestring; */
-    
     const getBadgeArr = license.map(element => {
       return `![alt text](https://img.shields.io/static/v1?label=licence&message=${encodeURIComponent(element)}&color=GREEN)`;
     });
