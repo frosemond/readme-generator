@@ -37,5 +37,6 @@
 
 
   ## Questions
-  Github Profile: [ryan7998]('https://github.com/ryan7998')
+  Github Profile: [ryan7998](https://github.com/ryan7998)
+
   Reach me with additional questions at ryan7998@gmail.com
