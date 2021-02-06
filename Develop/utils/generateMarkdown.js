@@ -13,7 +13,7 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  [<img src="https://img.shields.io/badge/licence-MIT-brightgreen">]
+
 
   ## Description
   ${data.description}
