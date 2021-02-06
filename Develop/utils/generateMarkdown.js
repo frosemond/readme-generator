@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   //console.log(license);
   if(license){
     //return '<img scr ="https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license)  +'&color=GREEN"></img>';
-    return '![alt text](https://img.shields.io/static/v1?label=licence&message='+ license +'&color=GREEN)';
+    return '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license.trim()) +'&color=GREEN)';
   }else{
     return '';
   }
