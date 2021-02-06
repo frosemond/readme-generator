@@ -1,8 +1,6 @@
-# title 001
+# title 002
 
-  <img scr ="https://img.shields.io/static/v1?label=licence&message=test&color=GREEN"></img>
-  
-  ![alt text](https://img.shields.io/static/v1?label=licence&message=test&color=GREEN)
+  ![alt text](https://img.shields.io/static/v1?label=licence&message=GNU AGPLv3, GNU GPLv3, GNU LGPLv3&color=GREEN)
 
   ## Description
   $//{data.description}
