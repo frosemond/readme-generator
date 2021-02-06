@@ -17,7 +17,49 @@ function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenceText = '';
+  license.forEach(element => {
+    console.log(element);
+    switch(element){
+      case 'GNU AGPLv3':
+        licenceText += 'GNU AGPLv3: \n Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available \n';
+        break;
+      case 'GNU GPLv3':
+        licenceText += 'GNU GPLv3: \n Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. \n';
+        break;
+      case 'GNU LGPLv3':
+        licenceText += 'GNU LGPLv3: \n Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work \n';
+        break;
+      case 'Mozilla Public License 2.0':
+        licenceText += 'Mozilla Public License 2.0: \n Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.\n';
+        break;
+      case 'Apache License 2.0':
+        licenceText += 'Apache License 2.0: \n A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
+        break;
+      case 'MIT License':
+        licenceText += 'MIT License: \n A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
+        break;
+      case 'Boost Software License 1.0':
+        licenceText += 'Boost Software License 1.0: \n A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
+        break;
+      case 'The Unlicense':
+        licenceText += 'The Unlicense: \n A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
+        break;
+      default:
+        licenceText +='';
+    }
+  });
+  return licenceText;
+ 
+ /*  //return require()
+  var licenceText='';
+  license.forEach(element => {
+    licenceText += require('../src/' + element);
+    // console.log(licenceText);
+  });
+  return licenceText; */
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -52,8 +94,9 @@ function generateMarkdown(data) {
   $//{data.test}
 
 
-  ## license
+  ## License
   $//{data.license.join(', ')}
+  ${renderLicenseSection(data.license)}
 
 
   ## Questioins
