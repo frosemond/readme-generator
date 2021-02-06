@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   //console.log(license);
   if(license){
-    return '<img scr ="https://img.shields.io/static/v1?label=licence&message='+ license +'&color=<GREEN>"</img>';
+    return '<img scr ="https://img.shields.io/static/v1?label=licence&message='+ license +'&color=GREEN"></img>';
   }else{
     return '';
   }
