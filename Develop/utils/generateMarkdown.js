@@ -1,28 +1,34 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  //console.log(license);
+// function that returns a license badge based on which license is passed in
+renderLicenseBadge = license =>{
+    // If license is chosen:
   if(license){
+    // create a badge dynamically from the chosen license and return a string containing the badge
     return '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license.trim()) +'&color=GREEN)';
   }else{
+    // if no license is chosen return empty string
     return '';
   }
   
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(element) {
-  // return '[](../src/' + element + ')';
-  return '[Link to the Licence](../src/' + encodeURIComponent(element) + '.txt)'
+// function that returns the license link
+renderLicenseLink = element => {
+  // if license is chosen return the link to the text file of the license:
+  if(element){
+    return '[Link to the Licence](../src/' + encodeURIComponent(element) + '.txt)'
+  }else{
+  // else return empty string
+    return '';
+  }
+  
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function that returns the license section (summary of the license) of README 
+// if multiple license is chosen, add summary with the previous
+// function also calls renderLicenseLink which returns link to the license text file
 function renderLicenseSection(license) {
   let licenceText = '';
   license.forEach(element => {
-    console.log(element);
     licenceText += element + ': <br />';
     licenceText += renderLicenseLink(element) + '<br />';
     switch(element){
@@ -56,24 +62,17 @@ function renderLicenseSection(license) {
     licenceText += '<br />';
   });
   return licenceText;
- 
- /*  //return require()
-  var licenceText='';
-  license.forEach(element => {
-    licenceText += require('../src/' + element);
-    // console.log(licenceText);
-  });
-  return licenceText; */
+
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
   ${renderLicenseBadge(data.license.join(', '))}
 
   ## Description
-  $//{data.description}
+  ${data.description}
 
 
   ## Table of Contents
@@ -84,19 +83,19 @@ function generateMarkdown(data) {
 
 
   ## Installation Instruction
-  $//{data.installation}
+  ${data.installation}
 
 
   ## Usage
-  $//{data.usage}
+  ${data.usage}
 
   
   ## Contributing
-  $//{data.contribution}
+  ${data.contribution}
 
 
   ## Tests
-  $//{data.test}
+  ${data.test}
 
 
   ## License
@@ -104,8 +103,8 @@ function generateMarkdown(data) {
 
 
   ## Questions
-  Github Profile: $//{data.githubUsername}
-  Reach me with additional questions at $//{data.email}
+  Github Profile: ${data.githubUsername}
+  Reach me with additional questions at ${data.email}
 `;
 }
 
