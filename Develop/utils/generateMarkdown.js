@@ -14,7 +14,8 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(element) {
-  return '[](../src/' + element + ')';
+  // return '[](../src/' + element + ')';
+  return '[a relative link](../src/GNU GPLv3.txt)'
 }
 
 // TODO: Create a function that returns the license section of README
