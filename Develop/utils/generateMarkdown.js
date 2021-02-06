@@ -23,32 +23,33 @@ function renderLicenseSection(license) {
     console.log(element);
     switch(element){
       case 'GNU AGPLv3':
-        licenceText += 'GNU AGPLv3: \n Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available \n';
+        licenceText += 'GNU AGPLv3: Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available \n';
         break;
       case 'GNU GPLv3':
-        licenceText += 'GNU GPLv3: \n Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. \n';
+        licenceText += 'GNU GPLv3: Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. \n';
         break;
       case 'GNU LGPLv3':
-        licenceText += 'GNU LGPLv3: \n Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work \n';
+        licenceText += 'GNU LGPLv3: Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work \n';
         break;
       case 'Mozilla Public License 2.0':
-        licenceText += 'Mozilla Public License 2.0: \n Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.\n';
+        licenceText += 'Mozilla Public License 2.0: Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.\n';
         break;
       case 'Apache License 2.0':
-        licenceText += 'Apache License 2.0: \n A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
+        licenceText += 'Apache License 2.0: A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
         break;
       case 'MIT License':
-        licenceText += 'MIT License: \n A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
+        licenceText += 'MIT License: A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
         break;
       case 'Boost Software License 1.0':
         licenceText += 'Boost Software License 1.0: \n A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
         break;
       case 'The Unlicense':
-        licenceText += 'The Unlicense: \n A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
+        licenceText += 'The Unlicense: A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code. \n';
         break;
       default:
         licenceText +='';
     }
+    licenceText += '<br />';
   });
   return licenceText;
  
@@ -95,7 +96,6 @@ function generateMarkdown(data) {
 
 
   ## License
-  $//{data.license.join(', ')}
   ${renderLicenseSection(data.license)}
 
 
