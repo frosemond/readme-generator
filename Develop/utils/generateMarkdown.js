@@ -4,7 +4,7 @@ renderLicenseBadge = license =>{
   if(license){
     var licenseBadgestring = '';
     license.forEach(element =>{
-      licenseBadgestring += '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(license) +'&color=GREEN) ';
+      licenseBadgestring += '![alt text](https://img.shields.io/static/v1?label=licence&message='+ encodeURIComponent(element) +'&color=GREEN) ';
     });
     return licenseBadgestring;
     // create a badge dynamically from the chosen license and return a string containing the badge

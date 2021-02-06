@@ -1,7 +1,7 @@
-# asdfasd
+# test002
 
   $//{renderLicenseBadge(data.license.join(', '))}
-  ![alt text](https://img.shields.io/static/v1?label=licence&message=GNU%20AGPLv3%2CMozilla%20Public%20License%202.0%2CApache%20License%202.0&color=GREEN) ![alt text](https://img.shields.io/static/v1?label=licence&message=GNU%20AGPLv3%2CMozilla%20Public%20License%202.0%2CApache%20License%202.0&color=GREEN) ![alt text](https://img.shields.io/static/v1?label=licence&message=GNU%20AGPLv3%2CMozilla%20Public%20License%202.0%2CApache%20License%202.0&color=GREEN) 
+  ![alt text](https://img.shields.io/static/v1?label=licence&message=GNU%20AGPLv3&color=GREEN) ![alt text](https://img.shields.io/static/v1?label=licence&message=Mozilla%20Public%20License%202.0&color=GREEN) ![alt text](https://img.shields.io/static/v1?label=licence&message=Apache%20License%202.0&color=GREEN) 
 
 
   ## Description
