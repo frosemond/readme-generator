@@ -1,4 +1,4 @@
-# asfd
+# asdf
 
   ![alt text](https://img.shields.io/static/v1?label=licence&message=GNU%20GPLv3&color=GREEN)
 
@@ -30,7 +30,7 @@
 
 
   ## License
-  GNU GPLv3: <br />[link to the Licence](../src/GNU%20GPLv3)Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. 
+  GNU GPLv3: <br />[link to the Licence](../src/GNU%20GPLv3.txt)<br />Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. 
 <br />
 
 
