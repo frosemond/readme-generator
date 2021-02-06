@@ -33,7 +33,7 @@ renderLicenseLink = element => {
 function renderLicenseSection(license) {
   let licenceText = '';
   license.forEach(element => {
-    licenceText += element + ': <br />';
+    licenceText += '###' + element + ': <br />';
     licenceText += renderLicenseLink(element) + '<br />';
     switch(element){
       case 'GNU AGPLv3':
@@ -63,7 +63,7 @@ function renderLicenseSection(license) {
       default:
         licenceText +='';
     }
-    licenceText += '<br />';
+    licenceText += '<br /><br />';
   });
   return licenceText;
 
