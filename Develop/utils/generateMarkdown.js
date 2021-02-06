@@ -13,7 +13,7 @@ renderLicenseBadge = license =>{
       return `![alt text](https://img.shields.io/static/v1?label=licence&message=${encodeURIComponent(element)}&color=GREEN)`;
     });
 
-    return getBadgeArr.join('');
+    return getBadgeArr.join(' ');
 
   }else{
     // if no license is chosen return empty string
