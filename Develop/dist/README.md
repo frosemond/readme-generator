@@ -1,4 +1,4 @@
-# readme generator
+# test readme generator
 
   ![alt text](https://img.shields.io/static/v1?label=licence&message=GNU%20AGPLv3&color=GREEN) ![alt text](https://img.shields.io/static/v1?label=licence&message=Mozilla%20Public%20License%202.0&color=GREEN) ![alt text](https://img.shields.io/static/v1?label=licence&message=Apache%20License%202.0&color=GREEN) 
 
@@ -40,5 +40,6 @@
 
 
   ## Questions
-  Github Profile: [ryan7998](https://github.com/$//{data.githubUsername})
+  Github Profile: [ryan7998](https://github.com/ryan7998)
+  <br />
   Reach me with additional questions at ryan7998@gmail.com
