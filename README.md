@@ -23,7 +23,7 @@ This is a command-line application that accepts user input.
  WHEN user click on the links in the Table of Contents THEN he/she is taken to the corresponding section of the README
 
 
-## STRUCTURE:
+## DESCRIPTION:
 
  'dist' forlder contains the README.MD which is created by the application
 
