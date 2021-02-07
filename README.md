@@ -36,3 +36,5 @@ This is a command-line application that accepts user input.
         the link to the license text file as string is returned, which is to be used in markdown.
     - license section is returned which gives a brief summary of the license.
 
+## Walkthrough video: 
+https://drive.google.com/file/d/1Ca8xu9_X4_FVvkIKEOcxdORdyn5C1z6f/view
